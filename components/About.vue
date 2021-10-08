@@ -70,6 +70,7 @@ export default {};
   &__title {
     font-size: 36px;
     color: #fff;
+    padding: 0 0 30px 0;
   }
   &__link-to-top {
     position: absolute;
@@ -84,13 +85,12 @@ export default {};
   &__text-container {
     display: flex;
     flex-direction: column;
-    padding: 30px 0;
     gap: 20px;
   }
   &__p {
     color: #d2d2d2;
     line-height: 1.5;
-    font-size: 20px;
+    font-size: 16px;
   }
   &__link {
     color: rgba(var(--color-principal));
@@ -102,7 +102,6 @@ export default {};
     padding: 20px 0;
   }
   &__tech {
-    padding: 20px 0;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 20px;
@@ -111,6 +110,7 @@ export default {};
 .students-block {
   display: flex;
   gap: 10px;
+  padding: 20px 0;
   &__student {
     display: flex;
     flex-direction: column;
@@ -132,6 +132,7 @@ export default {};
   display: flex;
   flex-direction: column;
   gap: 20px;
+  padding: 20px 0;
   &__iframe {
     width: 100%;
   }

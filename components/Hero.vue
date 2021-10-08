@@ -18,8 +18,10 @@ export default {};
   background-image: url("~/assets/image/hero_background_topography.svg");
   background-color: #000000;
   background-position: center;
+  background-attachment: fixed;
   z-index: 100;
   position: relative;
+  min-height: 568px;
 
   &::before {
     content: "";

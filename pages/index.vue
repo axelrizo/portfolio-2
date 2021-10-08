@@ -3,6 +3,8 @@
   Header
   Hero
   About#about
+  Projects#projects
+  Contact#contact
 </template>
 
 <script>

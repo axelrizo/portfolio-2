@@ -23,7 +23,6 @@ export default {
   methods: {
     toggleMenuShow(el) {
       this.showMenu = !this.showMenu;
-      console.log(el);
     },
   },
 };
