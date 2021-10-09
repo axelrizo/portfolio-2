@@ -1,9 +1,6 @@
 <template lang="pug">
-.contact
-  .contact__header
-    h3.contact__title Contact
-      a.contact__link-to-top(href="#", title="title")
-        IconArrowToTop.contact__icon
+Section.contact
+  SectionHeader(:info="{ title: 'Contact' }")
   .contact__container
     a.contact__link(href="mailto:axelg.rizos@gmail.com", title="title") Send me an email!
 </template>
@@ -14,26 +11,6 @@ export default {};
 
 <style lang="scss">
 .contact {
-  &__header {
-    position: relative;
-    margin: 0 auto;
-    width: fit-content;
-  }
-  &__title {
-    font-size: 36px;
-    color: #fff;
-    padding: 0 0 30px 0;
-  }
-  &__link-to-top {
-    position: absolute;
-    right: -70px;
-    top: 0;
-  }
-  &__icon {
-    width: 35px;
-    height: 35px;
-    color: rgba(var(--color-principal));
-  }
   &__container {
     display: flex;
     align-items: center;
