@@ -2,7 +2,7 @@
 .hero
   .hero__text
     h2.hero__title Hi, I'm Axel Rizo
-    h1.hero__subtitle Self-taught developer
+    h1.hero__subtitle Self-taught web developer
   .hero__picture
     .hero__circle-gradient
     img.hero__image(src="~/assets/image/hero_axel_image.png", alt="altText")

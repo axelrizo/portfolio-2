@@ -1,25 +1,25 @@
 <template lang="pug">
 .tech
-  IconHTML.tech__icon.tech__icon--HTML(v-if="tecnologies.HTML")
-  IconCSS.tech__icon.tech__icon--CSS(v-if="tecnologies.CSS")
+  IconHTML.tech__icon.tech__icon--HTML(v-if="technologies.HTML")
+  IconCSS.tech__icon.tech__icon--CSS(v-if="technologies.CSS")
   IconJavaScript.tech__icon.tech__icon--JavaScript(
-    v-if="tecnologies.JavaScript"
+    v-if="technologies.JavaScript"
   )
-  IconVue.tech__icon.tech__icon--Vue(v-if="tecnologies.Vue")
-  IconNuxt.tech__icon.tech__icon--Nuxt(v-if="tecnologies.Nuxt")
-  IconPug.tech__icon.tech__icon--Pug(v-if="tecnologies.Pug")
-  IconSass.tech__icon.tech__icon--Sass(v-if="tecnologies.Sass")
-  IconGit.tech__icon.tech__icon--Git(v-if="tecnologies.Git")
-  IconPHP.tech__icon.tech__icon--PHP(v-if="tecnologies.PHP")
-  IconMySQL.tech__icon.tech__icon--MySQL(v-if="tecnologies.MySQL")
-  IconBootstrap.tech__icon.tech__icon--Bootstrap(v-if="tecnologies.Bootstrap")
-  IconWebpack.tech__icon.tech__icon--Webpack(v-if="tecnologies.Webpack")
-  IconFigma.tech__icon.tech__icon--Figma(v-if="tecnologies.Figma")
+  IconVue.tech__icon.tech__icon--Vue(v-if="technologies.Vue")
+  IconNuxt.tech__icon.tech__icon--Nuxt(v-if="technologies.Nuxt")
+  IconPug.tech__icon.tech__icon--Pug(v-if="technologies.Pug")
+  IconSass.tech__icon.tech__icon--Sass(v-if="technologies.Sass")
+  IconGit.tech__icon.tech__icon--Git(v-if="technologies.Git")
+  IconPHP.tech__icon.tech__icon--PHP(v-if="technologies.PHP")
+  IconMySQL.tech__icon.tech__icon--MySQL(v-if="technologies.MySQL")
+  IconBootstrap.tech__icon.tech__icon--Bootstrap(v-if="technologies.Bootstrap")
+  IconWebpack.tech__icon.tech__icon--Webpack(v-if="technologies.Webpack")
+  IconFigma.tech__icon.tech__icon--Figma(v-if="technologies.Figma")
 </template>
 
 <script>
 export default {
-  props: ["tecnologies"],
+  props: ["technologies"],
 };
 </script>
 

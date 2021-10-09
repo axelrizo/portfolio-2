@@ -46,6 +46,8 @@ export default {};
     padding: 10px 20px;
     border-radius: 20px;
     background-color: rgba(var(--color-principal));
+    font-size: 20px;
+    text-align: center;
   }
 }
 </style>
