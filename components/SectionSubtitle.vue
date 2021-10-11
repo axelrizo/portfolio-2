@@ -1,5 +1,5 @@
 <template lang="pug">
-.section-subtitle {{ info.subtitle }}
+h2.section-subtitle {{ info.subtitle }}
 </template>
 
 <script>
@@ -13,9 +13,13 @@ export default {
 </script>
 
 <style lang="scss">
+@import "@/assets/css/_variables.scss";
 .section-subtitle {
-  font-size: 28px;
+  font-size: 30px;
   color: #fff;
   padding: 20px 0;
+  @media (min-width: $md) {
+    font-size: 40px;
+  }
 }
 </style>

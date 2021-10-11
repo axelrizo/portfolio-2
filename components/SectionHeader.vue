@@ -16,6 +16,7 @@ export default {
 </script>
 
 <style lang="scss">
+@import "@/assets/css/_variables.scss";
 .section-header {
   position: relative;
   margin: 0 auto;
@@ -24,6 +25,9 @@ export default {
     font-size: 36px;
     color: #fff;
     padding: 0 0 30px 0;
+    @media (min-width: $md) {
+      font-size: 48px;
+    }
   }
   &__link {
     position: absolute;

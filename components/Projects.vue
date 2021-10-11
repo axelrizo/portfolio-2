@@ -55,6 +55,7 @@ export default {};
 </script>
 
 <style lang="scss">
+@import "@/assets/css/_variables.scss";
 .projects {
   &__frontend {
     display: flex;
@@ -67,6 +68,11 @@ export default {};
     flex-direction: column;
     gap: 80px;
     padding: 20px 0 50px 0;
+    @media (min-width: $md) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 50px;
+    }
   }
 }
 </style>

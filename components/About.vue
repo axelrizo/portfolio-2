@@ -73,17 +73,13 @@ export default {};
 <style lang="scss">
 @import "~/assets/css/_variables.scss";
 .about {
-  @media (min-width: $md) {
-    width: 668px;
-    margin: 0 auto;
-  }
   &__tech {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
     grid-gap: 20px;
     @media (min-width: $md) {
       grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-      grid-gap: 40px;
+      grid-gap: 35px 70px;
     }
   }
   &__students {

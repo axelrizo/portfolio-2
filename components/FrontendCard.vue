@@ -42,26 +42,35 @@ export default {
 };
 </script>
 <style lang="scss">
+@import "@/assets/css/_variables.scss";
 .frontend-card {
   display: flex;
   flex-direction: column;
   gap: 20px;
   &__name {
     color: #fff;
-    font-size: 20px;
+    font-size: 24px;
+    @media (min-width: $md) {
+      font-size: 34px;
+    }
   }
   &__tech {
     display: flex;
     gap: 5px;
     .tech__icon {
-      height: 30px;
-      width: 30px;
+      height: 40px;
+      width: 40px;
+      @media (min-width: $md) {
+        height: 50px;
+        width: 50px;
+      }
     }
   }
   &__description {
     color: #d2d2d2;
     line-height: 1.5;
     font-size: 16px;
+    max-width: 60ch;
   }
   &__container {
     display: flex;
@@ -75,13 +84,20 @@ export default {
     text-decoration: none;
   }
   &__icon {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     color: #fff;
+    @media (min-width: $md) {
+      height: 60px;
+      width: 60px;
+    }
   }
   &__text {
     color: rgba(var(--color-principal));
     font-size: 16px;
+    @media (min-width: $md) {
+      font-size: 22px;
+    }
   }
 }
 </style>

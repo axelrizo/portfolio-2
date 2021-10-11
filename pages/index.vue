@@ -2,9 +2,9 @@
 .app
   //- Header
   //- Hero
-  About#about
-  //- Projects#projects
-  //- Contact#contact
+  //- About#about
+  Projects#projects
+  Contact#contact
   //- AppInstall(v-if="showInstall", style="background: white") Descargar APP
 </template>
 

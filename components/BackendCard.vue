@@ -22,20 +22,28 @@ export default {
 };
 </script>
 <style lang="scss">
+@import "@/assets/css/_variables.scss";
 .backend-card {
   display: flex;
   flex-direction: column;
   gap: 20px;
   &__name {
     color: #fff;
-    font-size: 20px;
+    font-size: 24px;
+    @media (min-width: $md) {
+      font-size: 34px;
+    }
   }
   &__tech {
     display: flex;
     gap: 5px;
     .tech__icon {
-      height: 30px;
-      width: 30px;
+      height: 40px;
+      width: 40px;
+      @media (min-width: $md) {
+        height: 50px;
+        width: 50px;
+      }
     }
   }
   &__description {
