@@ -71,11 +71,20 @@ export default {};
 </script>
 
 <style lang="scss">
+@import "~/assets/css/_variables.scss";
 .about {
+  @media (min-width: $md) {
+    width: 668px;
+    margin: 0 auto;
+  }
   &__tech {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
     grid-gap: 20px;
+    @media (min-width: $md) {
+      grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+      grid-gap: 40px;
+    }
   }
   &__students {
     display: flex;
@@ -87,6 +96,9 @@ export default {};
     flex-direction: column;
     gap: 20px;
     padding: 20px 0;
+    @media (min-width: $md) {
+      flex-direction: row;
+    }
   }
 }
 </style>
