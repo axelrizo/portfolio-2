@@ -22,6 +22,7 @@ export default {
 </script>
 
 <style lang="scss">
+@import "~/assets/css/_variables.scss";
 .header {
   z-index: 400;
   position: absolute;
@@ -36,6 +37,10 @@ export default {
     width: 198px;
     height: 30px;
     color: rgba(var(--color-principal));
+    @media (min-width: $md) {
+      width: 290px;
+      height: 44.5px;
+    }
   }
 }
 

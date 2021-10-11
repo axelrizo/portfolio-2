@@ -10,6 +10,7 @@ export default {};
 </script>
 
 <style lang="scss">
+@import "~/assets/css/_variables.scss";
 .nav {
   position: absolute;
   top: 60px;
@@ -23,14 +24,18 @@ export default {};
   padding: 30px 10px;
   border: 2px solid #fff;
   gap: 5px;
+  font-size: 20px;
+  @media (min-width: $md) {
+    top: 80px;
+    font-size: 30px;
+    gap: 15px;
+    padding: 50px 15px;
+  }
   &__link {
     padding: 10px 20px;
     color: #fff;
     text-decoration: none;
     transition: color 0.5s;
-    &:hover {
-      color: rgba(var(--color-principal));
-    }
   }
 }
 </style>

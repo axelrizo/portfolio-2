@@ -16,17 +16,22 @@ export default {
 </script>
 
 <style lang="scss">
+@import "~/assets/css/_variables.scss";
 .toggle {
   position: relative;
   width: 30px;
   height: 30px;
+  @media (min-width: $md) {
+    width: 50px;
+    height: 50px;
+  }
   &__icon {
     pointer-events: none;
     position: absolute;
     top: 0;
     left: 0;
-    width: 30px;
-    height: 30px;
+    width: 100%;
+    height: 100%;
     color: #fff;
   }
 }
