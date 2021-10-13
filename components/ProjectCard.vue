@@ -1,34 +1,34 @@
 <template lang="pug">
-.frontend-card
-  h3.frontend-card__name {{ info.name }}
-  img.frontend-card__image(:src="image", alt="altText")
+.project-card
+  h3.project-card__name {{ info.name }}
+  img.project-card__image(v-if="image", :src="image", alt="altText")
   slot
-  p.frontend-card__description {{ info.description }}
-  .frontend-card__container
-    a.frontend-card__link(
+  p.project-card__description {{ info.description }}
+  .project-card__container
+    a.project-card__link(
       v-if="github",
       :href="github",
       target="_blank",
       title="title"
     )
-      IconGithub.frontend-card__icon
-      span.frontend-card__text &lt;Github/&gt;
-    a.frontend-card__link(
+      IconGithub.project-card__icon
+      span.project-card__text &lt;Github/&gt;
+    a.project-card__link(
       v-if="figma",
       :href="figma",
       target="_blank",
       title="title"
     )
-      IconFigma.frontend-card__icon
-      span.frontend-card__text &lt;Figma/&gt;
-    a.frontend-card__link(
+      IconFigma.project-card__icon
+      span.project-card__text &lt;Figma/&gt;
+    a.project-card__link(
       v-if="link",
       :href="link",
       target="_blank",
       title="title"
     )
-      IconLink.frontend-card__icon
-      span.frontend-card__text &lt;Link/&gt;
+      IconLink.project-card__icon
+      span.project-card__text &lt;Link/&gt;
 </template>
 <script>
 export default {
@@ -43,7 +43,7 @@ export default {
 </script>
 <style lang="scss">
 @import "@/assets/css/_variables.scss";
-.frontend-card {
+.project-card {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -69,8 +69,10 @@ export default {
   &__description {
     color: #d2d2d2;
     line-height: 1.5;
-    font-size: 16px;
-    max-width: 60ch;
+    font-size: 18px;
+    @media (min-width: $md) {
+      font-size: 20px;
+    }
   }
   &__container {
     display: flex;

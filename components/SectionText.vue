@@ -8,14 +8,19 @@ export default {};
 </script>
 
 <style lang="scss">
+@import "@/assets/css/_variables.scss";
 .section-text {
   display: flex;
   flex-direction: column;
   gap: 20px;
+
   &__p {
     color: #d2d2d2;
     line-height: 1.5;
-    font-size: 16px;
+    font-size: 18px;
+    @media (min-width: $md) {
+      font-size: 20px;
+    }
   }
   &__link {
     color: rgba(var(--color-principal));

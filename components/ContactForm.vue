@@ -26,10 +26,16 @@ export default {};
 </script>
 
 <style lang="scss">
+@import "@/assets/css/_variables.scss";
 .contact-form {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  @media (min-width: $md) {
+    gap: 20px;
+    width: 500px;
+    margin: 0 auto;
+  }
   &__input {
     width: 100%;
     border: none;

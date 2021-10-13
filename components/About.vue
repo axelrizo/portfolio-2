@@ -75,7 +75,7 @@ export default {};
 .about {
   &__tech {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
     grid-gap: 20px;
     @media (min-width: $md) {
       grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
