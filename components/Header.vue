@@ -1,7 +1,10 @@
 <template lang="pug">
 header.header
   IconLogo.header__logo
-  HeaderToggle(@click.native="toggleMenuShow()", :showMenu="showMenu")
+  HeaderToggle.header__toggle(
+    @click.native="toggleMenuShow()",
+    :showMenu="showMenu"
+  )
   transition(name="fade")
     HeaderNav(v-show="showMenu", @click.native="toggleMenuShow()")
 </template>
@@ -10,13 +13,23 @@ header.header
 export default {
   data() {
     return {
-      showMenu: false,
+      showMenu: this.onResize(),
     };
   },
   methods: {
     toggleMenuShow() {
-      this.showMenu = !this.showMenu;
+      screen.width >= 1200
+        ? (this.showMenu = true)
+        : (this.showMenu = !this.showMenu);
     },
+    onResize() {
+      screen.width >= 1200 ? (this.showMenu = true) : (this.showMenu = false);
+      return this.showMenu;
+    },
+  },
+  mounted() {
+    this.onResize();
+    addEventListener("resize", this.onResize);
   },
 };
 </script>
@@ -32,7 +45,12 @@ export default {
   display: flex;
   justify-content: space-between;
   padding: 15px;
-
+  @media (min-width: $md) {
+    padding: 30px;
+  }
+  @media (min-width: $xl) {
+    padding: 15px;
+  }
   &__logo {
     width: 198px;
     height: 30px;
@@ -40,6 +58,11 @@ export default {
     @media (min-width: $md) {
       width: 290px;
       height: 44.5px;
+    }
+  }
+  &__toggle {
+    @media (min-width: $xl) {
+      display: none;
     }
   }
 }

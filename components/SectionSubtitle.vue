@@ -17,7 +17,11 @@ export default {
 .section-subtitle {
   font-size: 30px;
   color: #fff;
-  padding: 20px 0;
+  padding: 50px 0;
+  &::before {
+    content: "> ";
+    color: rgba(var(--color-principal));
+  }
   @media (min-width: $md) {
     font-size: 40px;
   }

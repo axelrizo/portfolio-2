@@ -2,7 +2,7 @@
 .hero
   .hero__text
     h2.hero__title Hi, I'm Axel Rizo
-    h1.hero__subtitle Self-taught web developer
+    h1.hero__subtitle Self-taught frontend developer
   .hero__picture
     .hero__circle-gradient
     img.hero__image(src="~/assets/image/hero_axel_image.png", alt="altText")
@@ -24,7 +24,7 @@ export default {};
   position: relative;
   min-height: 568px;
   @media (min-width: $md) {
-    min-height: 1000px;
+    min-height: 670px;
   }
 
   &::before {
@@ -36,6 +36,24 @@ export default {};
     width: 100%;
     height: 100%;
     z-index: 200;
+  }
+  &::after {
+    content: "";
+    @media (min-width: $xl) {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 201;
+      background: linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(0, 0, 0, 0) 10%,
+        rgba(0, 0, 0, 0) 90%,
+        rgba(0, 0, 0, 1) 100%
+      );
+    }
   }
   &__text {
     color: #fff;
@@ -51,6 +69,10 @@ export default {};
     @media (min-width: $md) {
       left: 10%;
       transform: translateX(0);
+    }
+    @media (min-width: $xl) {
+      top: 50%;
+      transform: translateY(-50%);
     }
   }
   &__title {
@@ -71,7 +93,12 @@ export default {};
     right: -5px;
     z-index: 300;
     @media (min-width: $md) {
-      right: -70px;
+      right: -20px;
+    }
+    @media (min-width: $xl) {
+      right: 10%;
+      top: 50%;
+      transform: translateY(-50%);
     }
   }
   &__circle-gradient {
@@ -86,17 +113,26 @@ export default {};
       rgba(var(--color-secondary-2), 0.7)
     );
     @media (min-width: $md) {
-      width: 600px;
-      height: 600px;
+      width: 392px;
+      height: 392px;
+    }
+    @media (min-height: 900px) {
+      height: 530px;
+      width: 530px;
     }
   }
   &__image {
     position: relative;
     width: 192px;
     height: 342px;
+    border-radius: 10px;
     @media (min-width: $md) {
-      height: 651px;
-      width: 367px;
+      height: 426px;
+      width: 239px;
+    }
+    @media (min-height: 900px) {
+      height: 577px;
+      width: 325px;
     }
   }
 }

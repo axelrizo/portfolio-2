@@ -24,20 +24,24 @@ export default {
   &__title {
     font-size: 36px;
     color: #fff;
-    padding: 0 0 30px 0;
+    padding: 0 0 60px 0;
     @media (min-width: $md) {
       font-size: 48px;
     }
   }
   &__link {
     position: absolute;
-    right: -70px;
+    right: -60px;
     top: 0;
   }
   &__icon {
     width: 35px;
     height: 35px;
     color: rgba(var(--color-principal));
+    @media (min-width: $md) {
+      width: 48px;
+      height: 48px;
+    }
   }
 }
 </style>

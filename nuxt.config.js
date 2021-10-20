@@ -1,4 +1,8 @@
 export default {
+  server: {
+    host: '0.0.0.0',
+    port: 8000
+  },
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,
 
@@ -7,7 +11,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Web developer | Axel Rizo',
+    title: 'Frontend developer | Axel Rizo',
     htmlAttrs: {
       lang: 'es'
     },
@@ -16,7 +20,7 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '' },
       { name: 'format-detection', content: 'telephone=no' },
-      { name: "theme-color", content: "#EA4C4C" }
+      { name: "theme-color", content: "#000000" }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },

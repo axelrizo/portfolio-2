@@ -12,12 +12,13 @@ export default {};
 .section-text {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 35px;
 
   &__p {
     color: #d2d2d2;
     line-height: 1.5;
     font-size: 18px;
+    max-width: 80ch;
     @media (min-width: $md) {
       font-size: 20px;
     }

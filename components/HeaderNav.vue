@@ -26,10 +26,20 @@ export default {};
   gap: 5px;
   font-size: 20px;
   @media (min-width: $md) {
-    top: 80px;
+    top: 100px;
     font-size: 30px;
     gap: 15px;
     padding: 50px 15px;
+  }
+  @media (min-width: $xl) {
+    position: relative;
+    flex-direction: row;
+    border: initial;
+    background-color: initial;
+    padding: initial;
+    top: initial;
+    right: initial;
+    font-size: 24px;
   }
   &__link {
     padding: 10px 20px;

@@ -41,6 +41,7 @@ export default {
   background-color: #000;
   position: relative;
   margin: auto;
+  max-width: 1400px;
 }
 
 * {

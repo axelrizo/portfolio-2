@@ -1,18 +1,21 @@
 <template lang="pug">
-form.contact-form(action="", method="POST")
+form.contact-form(action="backend/index.php", method="POST")
   textarea.contact-form__input.contact-form__input--textarea(
     required,
-    placeholder="Write something..."
+    placeholder="Write something...",
+    name="content"
   )
   input.contact-form__input.contact-form__input--name(
     type="text",
     required,
-    placeholder="Name"
+    placeholder="Name",
+    name="name"
   )
   input.contact-form__input.contact-form__input--email(
     type="email",
     required,
-    placeholder="Email"
+    placeholder="Email",
+    name="email"
   )
   input.contact-form__input.contact-form__input--submit(
     type="submit",
@@ -41,7 +44,7 @@ export default {};
     border: none;
     border-radius: 30px;
     background-color: #e5e5e5;
-    color: #696969;
+    color: #000;
     font-size: 16px;
 
     &:focus-visible {
