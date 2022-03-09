@@ -1,0 +1,8 @@
+POST http://www.axelrizo.tech/backend HTTP/1.1
+content-type: application/json
+
+{
+    "name": "test",
+    "content": "test",
+		"email": "test"
+}

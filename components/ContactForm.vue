@@ -1,22 +1,29 @@
 <template lang="pug">
-form.contact-form(action="backend/index.php", method="POST")
+form.contact-form(
+  v-on:submit.prevent="onSubmit()",
+  action="https://axelrizo.tech/backend",
+  method="POST",
+  en
+)
   textarea.contact-form__input.contact-form__input--textarea(
     required,
     placeholder="Write something...",
     name="content"
-  )
+  ) test
   input.contact-form__input.contact-form__input--name(
     type="text",
     required,
     placeholder="Name",
-    name="name"
-  )
+    name="name",
+    value="test"
+  ) 
   input.contact-form__input.contact-form__input--email(
     type="email",
     required,
     placeholder="Email",
-    name="email"
-  )
+    name="email",
+    value="test@test"
+  ) 
   input.contact-form__input.contact-form__input--submit(
     type="submit",
     required,
@@ -25,7 +32,20 @@ form.contact-form(action="backend/index.php", method="POST")
 </template>
 
 <script>
-export default {};
+export default {
+  methods: {
+    async onSubmit() {
+      const form = document.querySelector(".contact-form");
+      const url = form.action;
+      const data = new FormData(form);
+      const response = await fetch(url, {
+        method: form.method,
+        body: data,
+      }).then((res) => console.log(res));
+      console.log(response);
+    },
+  },
+};
 </script>
 
 <style lang="scss">
