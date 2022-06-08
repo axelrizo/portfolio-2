@@ -4,8 +4,8 @@ Section.about
 
   SectionText
     p.section-text__p My journey began when I was in my career and I discovered from myself that I like the automatization of Excel, then, I began to learn to code in my career and I knew that it was for me and here we are.
-    p.section-text__p I have a degree in Enterprise Innovation in Universidad del Caribe one of the best universities of Cancun.
-    p.section-text__p 
+    p.section-text__p I have a degree in Enterprise Innovation in "Universidad del Caribe" one of the best universities of Cancun.
+    p.section-text__p
       | I began to study programming with&nbsp;
       a.section-text__link(
         href="https://www.youtube.com/c/Jos%C3%A9DimasLuj%C3%A1nCastillo",
@@ -18,25 +18,22 @@ Section.about
   SectionSubtitle(:info="{ subtitle: 'Tecnologies' }")
 
   TechContainer.about__tech(
-    :technologies="{ HTML: true, CSS: true, JavaScript: true, Vue: true, Nuxt: true, Pug: true, Sass: true, Git: true, PHP: true, MySQL: true, Bootstrap: true, Webpack: true, Figma: true }"
+    :technologies="{ Vue: true, Nuxt: true, Pug: true, Sass: true, Git: true, Bootstrap: true }"
   )
 
   SectionSubtitle(:info="{ subtitle: 'Community' }")
 
   SectionText
-    p.section-text__p 
+    p.section-text__p
       | One of my activities being mentored by&nbsp;
       a.section-text__link(
         href="https://www.youtube.com/c/Jos%C3%A9DimasLuj%C3%A1nCastillo",
         target="_blank",
         title="title"
       ) &lt;José Dimas/&gt;
-      | &nbsp;is to teach and share my knowledge, and I’m currently teaching two persons from scratch:
+      | &nbsp;is to teach and share my knowledge, and I’m currently teaching from scratch to:
 
   .about__students
-    StudentCard(
-      :info="{ link: 'https://github.com/microazteca', name: 'microazteca' }"
-    )
     StudentCard(
       :info="{ link: 'https://github.com/SA-Zenk', name: 'SA-Zenk' }"
     )
@@ -45,7 +42,7 @@ Section.about
     p.section-text__p I like events and get involved:
     p.section-text__p In 2018 I was an espectator of Devfest Cancún 2018
     p.section-text__p In 2019 I was staff in Devfest Cancún 2019
-    p.section-text__p I’m currently participating with a Google community named GDG Cancún, that organize DevFest, as presentator:
+    p.section-text__p I was participating with a Google community named "GDG Cancún", that organize DevFest, as presentator:
 
   .about__youtube
     YoutubeIframe(
@@ -56,14 +53,25 @@ Section.about
     )
 
   SectionText
-    p.section-text__p 
-      | And developer, now I’m working on a platform copy of&nbsp;
+    p.section-text__p in 2021 I had a conference teaching how they can be a programmer without degree and I participate as presenter
+
+  .about__youtube
+    YoutubeIframe(
+      :info="{ link: 'https://www.youtube.com/embed/fO7tbEDrPxc' }"
+    )
+    YoutubeIframe(
+      :info="{ link: 'https://www.youtube.com/embed/t9V1zxXv4-k' }"
+    )
+
+  SectionText
+    p.section-text__p
+      | And developer, I worked on a platform copy of&nbsp;
       a.section-text__link(
-        href="https://devfestmexico.com/",
+        href="https://hoverboard-master.web.app/",
         target="_blank",
         title="title"
-      ) &lt;DevFest México/&gt;
-      | &nbsp;by leading a group of developers. The reason of the project is that we are looking for flexibility because the original page was created with Hoverboard and it makes hard to change things.
+      ) &lt;Hoverboard/&gt;
+      | &nbsp;by leading a group of 3 new developers.
 </template>
 
 <script>
@@ -77,6 +85,7 @@ export default {};
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
     grid-gap: 20px;
+    padding: 30px 0;
     @media (min-width: $md) {
       grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
       grid-gap: 35px 70px;

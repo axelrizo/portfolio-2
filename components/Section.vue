@@ -5,7 +5,7 @@
 <style lang="scss">
 @import "@/assets/css/_variables.scss";
 .section {
-  padding: 40px 15px;
+  padding: 150px 15px;
   @media (min-width: $sm) {
     margin: 0 auto;
     max-width: 516px;

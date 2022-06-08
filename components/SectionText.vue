@@ -12,7 +12,8 @@ export default {};
 .section-text {
   display: flex;
   flex-direction: column;
-  gap: 35px;
+  gap: 55px;
+  padding: 30px 0;
 
   &__p {
     color: #d2d2d2;

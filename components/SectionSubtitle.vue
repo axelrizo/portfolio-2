@@ -17,7 +17,7 @@ export default {
 .section-subtitle {
   font-size: 30px;
   color: #fff;
-  padding: 50px 0;
+  padding: 100px 0 40px;
   &::before {
     content: "> ";
     color: rgba(var(--color-principal));
