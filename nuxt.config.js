@@ -4,10 +4,10 @@ export default {
   //   port: 8000
   // },
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
-  ssr: true,
+  // ssr: true,
 
   // Target: https://go.nuxtjs.dev/config-target
-  target: 'server',
+  // target: 'server',
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -48,7 +48,7 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
-    '@nuxtjs/ngrok',
+    // '@nuxtjs/ngrok',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
