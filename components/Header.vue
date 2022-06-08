@@ -13,23 +13,27 @@ header.header
 export default {
   data() {
     return {
-      showMenu: this.onResize(),
+      showMenu: false,
     };
   },
   methods: {
     toggleMenuShow() {
-      screen.width >= 1200
+      window.screen.width >= 1200
         ? (this.showMenu = true)
         : (this.showMenu = !this.showMenu);
     },
     onResize() {
-      screen.width >= 1200 ? (this.showMenu = true) : (this.showMenu = false);
+      window.screen.width >= 1200
+        ? (this.showMenu = true)
+        : (this.showMenu = false);
       return this.showMenu;
     },
   },
   mounted() {
-    this.onResize();
-    addEventListener("resize", this.onResize);
+    if (process.browser) {
+      this.onResize();
+      addEventListener("resize", this.onResize);
+    }
   },
 };
 </script>
