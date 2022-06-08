@@ -7,7 +7,7 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "heroku-prebuild": "npm run generate"
+    "heroku-prebuild": "yarn generate"
   },
   "dependencies": {
     "@nuxtjs/ngrok": "^2.0.0",
