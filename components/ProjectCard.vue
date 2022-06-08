@@ -53,13 +53,13 @@ export default {
   &--frontend {
     .project-card {
       &__container-data {
-        @media (min-width: $xl) {
+        @media (min-width: $lg) {
           flex-direction: row;
           gap: 50px;
         }
       }
       &__container-info {
-        @media (min-width: $xl) {
+        @media (min-width: $lg) {
           justify-content: space-between;
         }
       }
@@ -72,8 +72,11 @@ export default {
   }
 
   &__image {
-    width: 50%;
     height: 100%;
+    width: 100%;
+    @media (min-width: $lg) {
+      width: 50%;
+    }
   }
 
   &__container-info {
