@@ -4,8 +4,8 @@ Section.projects
 
   .projects__frontend
     ProjectCard(
-      :info="{ name: 'Devfest', description: 'I needed a new portfolio, one that I like it, then, with my new knowledge I did one, I use Nuxt as Static Site Generator and Vue' }",
-      :image="require('~/assets/image/projects_1.png')",
+      :info="{ name: 'Devfest', description: 'We need for \"GDG México Unido\" a way to load the event page with information easier and I was assigned as the leader of 3 novice programmers to do it' }",
+      :image="require('~/assets/image/project_GDG.png')",
       link="https://devfestmexico.herokuapp.com"
       :frontend="true"
     )

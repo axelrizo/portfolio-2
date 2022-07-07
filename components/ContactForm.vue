@@ -1,47 +1,42 @@
 <template lang="pug">
-form.contact-form(
-  v-on:submit.prevent="onSubmit()",
-  action="https://axelrizo.tech/backend",
-  method="POST",
-  en
-)
-  textarea.contact-form__input.contact-form__input--textarea(
-    required,
-    placeholder="Write something...",
-    name="content"
-  ) test
-  input.contact-form__input.contact-form__input--name(
-    type="text",
-    required,
-    placeholder="Name",
-    name="name",
-    value="test"
-  ) 
+form.contact-form(v-on:submit.prevent="onSubmit()", method="POST", ref="contactForm")
   input.contact-form__input.contact-form__input--email(
     type="email",
     required,
     placeholder="Email",
     name="email",
     value="test@test"
-  ) 
+  )
+  input.contact-form__input.contact-form__input--name(
+    type="text",
+    required,
+    placeholder="Name",
+    name="name",
+    value="test"
+  )
+  textarea.contact-form__input.contact-form__input--textarea(
+    required,
+    placeholder="Write something...",
+    name="content"
+  ) test
   input.contact-form__input.contact-form__input--submit(
     type="submit",
     required,
     value="<Send/>"
-  ) 
+  )
 </template>
 
 <script>
 export default {
   methods: {
     async onSubmit() {
-      const form = document.querySelector(".contact-form");
-      const url = form.action;
+      const form = this.$refs.contactForm;
+      const url = "http://localhost:5000/";
       const data = new FormData(form);
       const response = await fetch(url, {
-        method: form.method,
-        body: data,
-      }).then((res) => console.log(res));
+        method: "POST",
+        body: new URLSearchParams((data)),
+      });
       console.log(response);
     },
   },

@@ -31,7 +31,7 @@ Section.about
         target="_blank",
         title="title"
       ) &lt;José Dimas/&gt;
-      | &nbsp;is to teach and share my knowledge, and I’m currently teaching from scratch to:
+      | &nbsp;is to teach and share my knowledge, I taught two programmers, and I’m currently teaching from scratch to:
 
   .about__students
     StudentCard(
