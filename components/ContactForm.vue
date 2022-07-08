@@ -31,7 +31,7 @@ export default {
   methods: {
     async onSubmit() {
       const form = this.$refs.contactForm;
-      const url = "http://localhost:5000/";
+      const url = "https://backend.axelrizo.tech/";
       const data = new FormData(form);
       const response = await fetch(url, {
         method: "POST",
