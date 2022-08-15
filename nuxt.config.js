@@ -32,8 +32,7 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
-    "~/assets/css/reset.css",
-    "~/assets/css/default.css"
+    "~/assets/scss/index.scss",
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
@@ -41,20 +40,25 @@ export default {
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
-  components: [
-    '~/components',
-    { path: '~/components/icons', extensions: ['vue'] }
-  ],
+  components: true,
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
     // '@nuxtjs/ngrok',
+    // https://go.nuxtjs.dev/eslint
+    '@nuxtjs/eslint-module'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // '@nuxtjs/pwa'
+    "@nuxtjs/style-resources"
   ],
+
+  // Style resources configuration: https://www.npmjs.com/package/@nuxtjs/style-resources
+  styleResources: {
+    scss: '@/assets/scss/variables/_responsive.scss'
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
