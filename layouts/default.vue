@@ -1,7 +1,7 @@
 <template lang="pug">
 div.app
   Header
-  Nuxt
+  //- Nuxt
 </template>
 
 <style lang="scss" scoped>
