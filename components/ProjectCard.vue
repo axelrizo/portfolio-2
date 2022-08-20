@@ -45,7 +45,7 @@ export default {
 };
 </script>
 <style lang="scss">
-@import "@/assets/css/_variables.scss";
+
 .project-card {
   display: flex;
   flex-direction: column;

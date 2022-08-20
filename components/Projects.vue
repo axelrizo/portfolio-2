@@ -19,7 +19,7 @@ export default {};
 </script>
 
 <style lang="scss">
-@import "@/assets/css/_variables.scss";
+
 .projects {
   &__frontend {
     display: flex;

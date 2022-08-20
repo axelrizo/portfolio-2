@@ -44,7 +44,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import "@/assets/css/_variables.scss";
+
 .contact-form {
   display: flex;
   flex-direction: column;

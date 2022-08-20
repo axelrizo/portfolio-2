@@ -13,7 +13,7 @@ export default {};
 </script>
 
 <style lang="scss">
-@import "~/assets/css/_variables.scss";
+
 .hero {
   height: 100vh;
   background-image: url("~/assets/image/hero_background_topography.svg");

@@ -10,7 +10,6 @@ export default {};
 </script>
 
 <style lang="scss">
-@import "~/assets/css/_variables.scss";
 .nav {
   position: absolute;
   top: 60px;

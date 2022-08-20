@@ -8,7 +8,7 @@ export default {};
 </script>
 
 <style lang="scss">
-@import "@/assets/css/_variables.scss";
+
 .section-text {
   display: flex;
   flex-direction: column;

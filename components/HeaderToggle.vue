@@ -16,7 +16,6 @@ export default {
 </script>
 
 <style lang="scss">
-@import "~/assets/css/_variables.scss";
 .toggle {
   position: relative;
   width: 30px;

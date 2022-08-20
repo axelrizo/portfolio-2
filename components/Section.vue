@@ -3,7 +3,7 @@
   slot
 </template>
 <style lang="scss">
-@import "@/assets/css/_variables.scss";
+
 .section {
   padding: 150px 15px;
   @media (min-width: $sm) {
