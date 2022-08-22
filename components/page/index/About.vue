@@ -1,8 +1,8 @@
 <template lang="pug">
-Section.about
-  SectionHeader(:info="{ title: 'About' }")
+BaseContainer.about
+  BaseHeader(:info="{ title: 'About' }")
 
-  SectionText
+  BaseText
     p.section-text__p My journey began when I was in my career and I discovered from myself that I like the automatization of Excel, then, I began to learn to code in my career and I knew that it was for me and here we are.
     p.section-text__p I have a degree in Enterprise Innovation in "Universidad del Caribe" one of the best universities of Cancun.
     p.section-text__p
@@ -15,15 +15,15 @@ Section.about
       | , that has a Youtube Channel and is a teacher in my university.
     p.section-text__p I learn fast , I'm self taught and I'm an apasionate of good code and simplicity.
 
-  SectionSubtitle(:info="{ subtitle: 'Tecnologies' }")
+  BaseSubtitle(:info="{ subtitle: 'Technologies' }")
 
-  TechContainer.about__tech(
+  BaseTechContainer.about__tech(
     :technologies="{ Vue: true, Nuxt: true, Pug: true, Sass: true, Git: true, Bootstrap: true }"
   )
 
-  SectionSubtitle(:info="{ subtitle: 'Community' }")
+  BaseSubtitle(:info="{ subtitle: 'Community' }")
 
-  SectionText
+  BaseText
     p.section-text__p
       | One of my activities being mentored by&nbsp;
       a.section-text__link(
@@ -34,36 +34,36 @@ Section.about
       | &nbsp;is to teach and share my knowledge, I taught two programmers, and I’m currently teaching from scratch to:
 
   .about__students
-    StudentCard(
+    BaseStudentCard(
       :info="{ link: 'https://github.com/SA-Zenk', name: 'SA-Zenk' }"
     )
 
-  SectionText
+  BaseText
     p.section-text__p I like events and get involved:
     p.section-text__p In 2018 I was an espectator of Devfest Cancún 2018
     p.section-text__p In 2019 I was staff in Devfest Cancún 2019
     p.section-text__p I was participating with a Google community named "GDG Cancún", that organize DevFest, as presentator:
 
   .about__youtube
-    YoutubeIframe(
+    BaseYoutubeIframe(
       :info="{ link: 'https://www.youtube.com/embed/RrRcC6ntRvk' }"
     )
-    YoutubeIframe(
+    BaseYoutubeIframe(
       :info="{ link: 'https://www.youtube.com/embed/5P9_w4Yqjws' }"
     )
 
-  SectionText
+  BaseText
     p.section-text__p in 2021 I had a conference teaching how they can be a programmer without degree and I participate as presenter
 
   .about__youtube
-    YoutubeIframe(
+    BaseYoutubeIframe(
       :info="{ link: 'https://www.youtube.com/embed/fO7tbEDrPxc' }"
     )
-    YoutubeIframe(
+    BaseYoutubeIframe(
       :info="{ link: 'https://www.youtube.com/embed/t9V1zxXv4-k' }"
     )
 
-  SectionText
+  BaseText
     p.section-text__p
       | And developer, I worked on a platform copy of&nbsp;
       a.section-text__link(

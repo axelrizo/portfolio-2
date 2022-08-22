@@ -1,8 +1,8 @@
 <template lang="pug">
-Section.contact
-  SectionHeader(:info="{ title: 'Contact' }")
+BaseContainer.contact
+  BaseHeader(:info="{ title: 'Contact' }")
   p.contact__text Say hello! :)
-  ContactForm.contact__form
+  PageIndexContactForm.contact__form
 </template>
 
 <script>

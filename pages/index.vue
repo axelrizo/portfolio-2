@@ -1,7 +1,7 @@
 <template lang="pug">
 .home-page
-  Hero
-  About#about
-  Projects#projects
-  Contact#contact
+  PageIndexHero
+  PageIndexAbout#about
+  PageIndexProjects#projects
+  PageIndexContact#contact
 </template>

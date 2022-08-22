@@ -1,15 +1,15 @@
 <template lang="pug">
-Section.projects
-  SectionHeader(:info="{ title: 'Projects' }")
+BaseContainer.projects
+  BaseHeader(:info="{ title: 'Projects' }")
 
   .projects__frontend
-    ProjectCard(
+    BaseProjectCard(
       :info="{ name: 'Devfest', description: 'We need for \"GDG México Unido\" a way to load the event page with information easier and I was assigned as the leader of 3 novice programmers to do it' }",
       :image="require('~/assets/image/project_GDG.png')",
       link="https://devfestmexico.herokuapp.com"
       :frontend="true"
     )
-      TechContainer.project-card__tech(
+      BaseTechContainer.project-card__tech(
         :technologies="{ Vue: true, Pug: true, Sass: true}"
       )
 </template>

@@ -1,12 +1,12 @@
 <template lang="pug">
 header.header
   IconLogo.header__logo
-  HeaderToggle.header__toggle(
+  LayoutHeaderToggle.header__toggle(
     @click.native="toggleMenuShow()",
     :showMenu="showMenu"
   )
   transition(name="fade")
-    HeaderNav(v-show="showMenu", @click.native="toggleMenuShow()")
+    LayoutHeaderNav(v-show="showMenu", @click.native="toggleMenuShow()")
 </template>
 
 <script>

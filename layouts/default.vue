@@ -1,14 +1,14 @@
 <template lang="pug">
 div.app
-  Header
-  //- Nuxt
+  LayoutHeader
+  Nuxt
 </template>
 
 <style lang="scss" scoped>
 .app {
-  --color-principal: 234, 76, 76;
-  --color-secondary-1: 193, 69, 69;
-  --color-secondary-2: 250, 244, 208;
+  --color-principal: 66, 184, 131;
+  --color-secondary-1: 66, 184, 131;
+  --color-secondary-2: 53, 73, 94;
   overflow-x: hidden;
   background-color: #000;
   position: relative;
