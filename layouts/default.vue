@@ -1,23 +1,25 @@
 <template lang="pug">
-div.app
-  LayoutHeader
+BaseContainer.layout-default.xxl
+  LayoutHeaderMobile.layout-default__header-mobile
+  LayoutHeaderDesktop.layout-default__header-desktop
   Nuxt
 </template>
 
 <style lang="scss" scoped>
-.app {
-  --color-principal: 66, 184, 131;
-  --color-secondary-1: 66, 184, 131;
-  --color-secondary-2: 53, 73, 94;
-  overflow-x: hidden;
-  background-color: #000;
+.layout-default{
   position: relative;
-  margin: auto;
-  max-width: 1400px;
-}
 
-* {
-  font-family: "Poppins", sans-serif;
-  box-sizing: border-box;
+  &__header-mobile {
+    @media (min-width: $lg) {
+      display: none;
+    }
+  }
+
+  &__header-desktop {
+    display: none;
+    @media (min-width: $lg) {
+      display: flex;
+    }
+  }
 }
 </style>

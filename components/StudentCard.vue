@@ -14,7 +14,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .student-card {
   display: flex;
   flex-direction: column;

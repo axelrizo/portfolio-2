@@ -1,5 +1,5 @@
 <template lang="pug">
-.project-card(:class="{ 'project-card--frontend': frontend }")
+.project-card
   h3.project-card__name {{ info.name }}
   .project-card__container-data
     img.project-card__image(v-if="image", :src="image", alt="altText")
@@ -40,31 +40,29 @@ export default {
     figma: String,
     link: String,
     image: String,
-    frontend: Boolean,
   },
 };
 </script>
-<style lang="scss">
+<style lang="scss" scoped>
 
 .project-card {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  &--frontend {
-    .project-card {
-      &__container-data {
-        @media (min-width: $lg) {
-          flex-direction: row;
-          gap: 50px;
-        }
-      }
-      &__container-info {
-        @media (min-width: $lg) {
-          justify-content: space-between;
-        }
-      }
+
+  &__container-data {
+    @media (min-width: $lg) {
+      flex-direction: row;
+      gap: 50px;
     }
   }
+
+  &__container-info {
+    @media (min-width: $lg) {
+      justify-content: space-between;
+    }
+  }
+
   &__container-data {
     display: flex;
     flex-direction: column;

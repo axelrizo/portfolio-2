@@ -1,5 +1,10 @@
+* {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
-  background-color: #000;
+  background-color: var(--background);
 }
