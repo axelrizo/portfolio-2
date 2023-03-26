@@ -53,7 +53,6 @@ export default {
   modules: [
     // '@nuxtjs/pwa'
     "@nuxtjs/style-resources",
-    '@nuxtjs/tailwindcss'
   ],
 
   // Style resources configuration: https://www.npmjs.com/package/@nuxtjs/style-resources

@@ -1,12 +1,12 @@
 <template lang="pug">
 header.header
   IconLogo.header__logo
-  LayoutHeaderToggle.header__toggle(
-    @click.native="toggleMenuShow()",
+  HeaderToggle.header__toggle(
+    @click.native="showMenu = !showMenu",
     :showMenu="showMenu"
   )
   transition(name="fade")
-    LayoutHeaderNav(v-show="showMenu", @click.native="toggleMenuShow()")
+    HeaderNav(v-show="showMenu", @click.native="showMenu = !showMenu")
 </template>
 
 <script>
@@ -15,26 +15,7 @@ export default {
     return {
       showMenu: false,
     };
-  },
-  methods: {
-    toggleMenuShow() {
-      window.screen.width >= 1200
-        ? (this.showMenu = true)
-        : (this.showMenu = !this.showMenu);
-    },
-    onResize() {
-      window.screen.width >= 1200
-        ? (this.showMenu = true)
-        : (this.showMenu = false);
-      return this.showMenu;
-    },
-  },
-  mounted() {
-    if (process.browser) {
-      this.onResize();
-      addEventListener("resize", this.onResize);
-    }
-  },
+  }
 };
 </script>
 

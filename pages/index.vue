@@ -13,29 +13,21 @@
   BaseContainer.about
     SectionTitle.text-white About
 
-    BaseText
-      p.section-text__p My journey began when I was in my career and I discovered from myself that I like the automatization of Excel, then, I began to learn to code in my career and I knew that it was for me and here we are.
-      p.section-text__p I have a degree in Enterprise Innovation in "Universidad del Caribe" one of the best universities of Cancun.
-      p.section-text__p
-        | I began to study programming with&nbsp;
-        a.section-text__link(
-          href="https://www.youtube.com/c/Jos%C3%A9DimasLuj%C3%A1nCastillo",
-          target="_blank",
-          title="title"
-        ) &lt; José Dimas/ &gt;
-        | , that has a Youtube Channel and is a teacher in my university.
-      p.section-text__p I learn fast , I'm self taught and I'm an passionate of good code and simplicity.
+    BaseText(tag="p") My journey began when I was in my career and I discovered from myself that I like the automatization of Excel, then, I began to learn to code in my career and I knew that it was for me and here we are.
+    BaseText(tag="p") I have a degree in Enterprise Innovation in "Universidad del Caribe" one of the best universities of Cancun.
+    BaseText(tag="p") I began to study programming with #[a.section-text__link(href="https://www.youtube.com/c/Jos%C3%A9DimasLuj%C3%A1nCastillo", target="_blank") &lt; José Dimas/ &gt;] that has a Youtube Channel and is a teacher in my university.
+    BaseText(tag="p") I learn fast , I'm self taught and I'm an passionate of good code and simplicity.
 
-    BaseSubtitle(:info="{ subtitle: 'Technologies' }")
+    Subtitle(:info="{ subtitle: 'Technologies' }")
 
-    BaseTechContainer.about__tech(
+    TechContainer.about__tech(
       :technologies="{ Vue: true, Nuxt: true, Pug: true, Sass: true, Git: true, Bootstrap: true }"
     )
 
-    BaseSubtitle(:info="{ subtitle: 'Community' }")
+    Subtitle(:info="{ subtitle: 'Community' }")
 
     BaseText
-      p.section-text__p
+      p
         | One of my activities being mentored by&nbsp;
         a.section-text__link(
           href="https://www.youtube.com/c/Jos%C3%A9DimasLuj%C3%A1nCastillo",
@@ -45,15 +37,18 @@
         | &nbsp;is to teach and share my knowledge, I taught two programmers, and I’m currently teaching from scratch to:
 
     .about__students
-      BaseStudentCard(
+      StudentCard(
         :info="{ link: 'https://github.com/SA-Zenk', name: 'SA-Zenk' }"
+      )
+      StudentCard(
+        :info="{ link: 'https://github.com/microazteca', name: 'microazteca' }"
       )
 
     BaseText
-      p.section-text__p I like events and get involved:
-      p.section-text__p In 2018 I was an espectator of Devfest Cancún 2018
-      p.section-text__p In 2019 I was staff in Devfest Cancún 2019
-      p.section-text__p I was participating with a Google community named "GDG Cancún", that organize DevFest, as presentator:
+      p I like events and get involved:
+      p In 2018 I was an espectator of Devfest Cancún 2018
+      p In 2019 I was staff in Devfest Cancún 2019
+      p I was participating with a Google community named "GDG Cancún", that organize DevFest, as presentator:
 
     .about__youtube
       BaseYoutubeIframe(
@@ -64,7 +59,7 @@
       )
 
     BaseText
-      p.section-text__p in 2021 I had a conference teaching how they can be a programmer without degree and I participate as presenter
+      p in 2021 I had a conference teaching how they can be a programmer without degree and I participate as presenter
 
     .about__youtube
       BaseYoutubeIframe(
@@ -75,7 +70,7 @@
       )
 
     BaseText
-      p.section-text__p
+      p
         | And developer, I worked on a platform copy of&nbsp;
         a.section-text__link(
           href="https://hoverboard-master.web.app/",
@@ -94,7 +89,7 @@
         link="https://devfestmexico.herokuapp.com",
         :frontend="true"
       )
-        BaseTechContainer.project-card__tech(
+        TechContainer.project-card__tech(
           :technologies="{ Vue: true, Pug: true, Sass: true }"
         )
   BaseContainer.contact

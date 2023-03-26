@@ -24,7 +24,7 @@ export default {
 }
 
 @media (min-width: $md) {
-  .text-md {
+  .text-md{
     &-70px {
       font-size: 70px;
     }
@@ -40,5 +40,6 @@ export default {
 }
 
 .text-color {
+
 }
 </style>

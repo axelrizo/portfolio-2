@@ -1,7 +1,7 @@
 <template lang="pug">
 BaseContainer.layout-default.xxl
-  LayoutHeaderMobile.layout-default__header-mobile
-  LayoutHeaderDesktop.layout-default__header-desktop
+  HeaderMobile.layout-default__header-mobile
+  HeaderDesktop.layout-default__header-desktop
   Nuxt
 </template>
 

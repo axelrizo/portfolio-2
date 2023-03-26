@@ -1,10 +1,8 @@
 
 <template lang="pug">
 .toggle
-  transition(name="fade")
-    IconMenu.toggle__icon.toggle__icon--menu(v-show="!showMenu")
-  transition(name="fade")
-    IconClose.toggle__icon.toggle__icon--close(v-show="showMenu")
+  IconMenu.toggle__icon(v-if="!showMenu")
+  IconClose.toggle__icon(v-else)
 </template>
 
 <script>
